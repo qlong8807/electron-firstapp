@@ -1,7 +1,9 @@
 * 安装node.js
 * 安装淘宝的cnpm
+
     npm install -g cnpm --registry=https://registry.npm.taobao.org
 * 安装electron && electron-packager
+
     cnpm install -g electron
     cnpm install -g electron-packager
 * 写完代码先install
@@ -25,4 +27,8 @@
             * optional options：可选选项
 
 
-
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/qlong8807/electron-firstapp.git
+git push -u origin master
