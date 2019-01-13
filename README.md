@@ -1,20 +1,22 @@
-* 安装node.js
-* 安装淘宝的cnpm
+## 安装node.js
+>官网安装即可
+## 安装淘宝的cnpm
 >npm install -g cnpm --registry=https://registry.npm.taobao.org
-* 安装electron && electron-packager
+## 安装electron && electron-packager
 >cnpm install -g electron
 cnpm install -g electron-packager
-* 写完代码先install
+## 写完代码先install
 >npm install
-* 启动程序
+## 启动程序
 >npm start
-* 打包命令
->npm run-script packageWin
-npm run-script packageDarwin
-npm run-script packageLinux
-npm run-script package
-打包命令中一定要有`--ignore=node_modules`,否则打包不能成功；
-**命令行打包参数**：
+## 打包命令
+> packageWin等已经写在package.json文件中，直接执行即可。
+* npm run-script packageWin
+* npm run-script packageDarwin
+* npm run-script packageLinux
+* npm run-script package
+>>打包命令中一定要有`--ignore=node_modules`,否则打包不能成功；
+### **命令行打包参数**：
 electron-packager <location of project> <name of project> <platform> <architecture> <electron version> <optional options>
 参数说明： 
 * location of project：项目所在路径 
