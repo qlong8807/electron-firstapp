@@ -1,6 +1,7 @@
 # git 命令
 ## 配置用户和邮箱
 git config --global user.name "newname"
+
 git config --global user.email "newemail"
 ## 初始化
 git init
@@ -26,6 +27,7 @@ git pull
 git diff -- HEAD src/com/breakyizhan/git/HelloGIT.java
 ## 撤销修改
 git checkout -- src/com/breakyizhan/git/HelloGIT.java //撤销对HelloGIT.java的修改
+
 git checkout . //撤销所有文件的修改
 
 ## 分支
@@ -37,12 +39,15 @@ git checkout dev
 git branch -d dev
 ### 合并分支
 git checkout master
+
 git merge dev//在master保留dev分支信息
+
 git merge --no-ff -m "dev merge master with no-ff" dev//在master会生成一个新的commit，在dev保留分支信息
 
 ## 暂存区
 ### 暂存代码
 git add .
+
 git stash
 ### 查看暂存区
 git stash list
